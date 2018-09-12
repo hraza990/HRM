@@ -1,0 +1,25 @@
+.nested-accordion .accordion-title+ul {
+    display: none;
+    list-style-type: none;
+}
+.nested-accordion .accordion-title {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.nested-accordion li .accordion-title {
+    font-size: 15px;
+}
+.nested-accordion > li li {
+    padding: 5px 0;
+}
+.nested-accordion .accordion-title:before {
+    padding: 5px;
+    content: '\25B8';
+}
+.nested-accordion .accordion-title.expanded:before {
+    content: '\25BE';
+}
+.nested-accordion .accordion-title.expanded + ul {
+    display: block;
+}
